@@ -9,11 +9,11 @@ def sumOfEvenFibonacci(n)
 	fn = 21
 	i = 8
 	while (fn < n)
+		if i % 3 == 0 then sum = sum + fn end
 		fn2 = fn1
 		fn1 = fn
 		fn = fn1 + fn2
 		i += 1
-		if i % 3 == 0 then sum = sum + fn end
 	end
 	return sum
 end
