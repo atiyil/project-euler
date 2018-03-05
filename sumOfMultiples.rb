@@ -12,9 +12,6 @@ def sumOfMultiples(a,b,n)
   (1..numB).each {|x| sumB = sumB + x}
   (1..numAB).each {|x| sumAB = sumAB + x}
 
-  #arr = Array.new(numA) {|i| i+1}
-  #arr.each {|x| sumA = sumA + x}
-  print sumA, ',', sumB, ',', sumAB, ': '
   return sumA*a + sumB*b - sumAB*a*b
 end 
 
